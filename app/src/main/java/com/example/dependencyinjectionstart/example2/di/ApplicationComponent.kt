@@ -6,7 +6,9 @@ import com.example.dependencyinjectionstart.example2.data.datasource.ExampleLoca
 import com.example.dependencyinjectionstart.example2.presentation.MainActivity
 import dagger.BindsInstance
 import dagger.Component
+import javax.inject.Singleton
 
+@Singleton
 @Component(modules = [DataModule::class, DomainModule::class])
 interface ApplicationComponent {
 
