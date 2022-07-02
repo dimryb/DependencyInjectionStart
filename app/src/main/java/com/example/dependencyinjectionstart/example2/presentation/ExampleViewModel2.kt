@@ -8,7 +8,7 @@ import com.example.dependencyinjectionstart.example2.domain.ExampleUseCase
 import javax.inject.Inject
 import javax.inject.Named
 
-class ExampleViewModel @Inject constructor(
+class ExampleViewModel2 @Inject constructor(
     private val useCase: ExampleUseCase,
     @IdQualifier private val id: String,
     @NameQualifier private val name: String
@@ -16,6 +16,6 @@ class ExampleViewModel @Inject constructor(
 
     fun method() {
         useCase()
-        Log.d("ExampleViewModel", "$this $id $name")
+        Log.d("ExampleViewModel2", "$this $id $name")
     }
 }
